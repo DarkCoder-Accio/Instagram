@@ -67,10 +67,10 @@ const Dashboard = () => {
     return(
         <div>
 
-            <h1>Welcome {name}</h1>
-            <p>{joke}</p>
+            <h1 className="welcome-text">Welcome {name}</h1>
+            <p className="joke-text">{joke}</p>
 
-            <button onClick={handleLogout}>Logout</button>
+            <button  className="logout-button" onClick={handleLogout}>Logout</button>
         </div>
     )
 }

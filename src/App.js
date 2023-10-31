@@ -6,12 +6,23 @@ import Signup from "./Componets/Signup";
 import Login from "./Componets/Login";
 import Dashboard from "./Componets/Dashboard";
 
+import CreatePost from "./Componets/CreatePost";
+
+import ImageUpload from "./Componets/ImageUpload";
+
 
 const App = () => {
     
 
   return(
     <div>
+
+         {/* <CreatePost /> */}
+
+          <ImageUpload />
+
+
+          
         <Routes>
               <Route path="/" element={<Signup />} />
               <Route path="/login" element={<Login />} />
@@ -23,3 +34,5 @@ const App = () => {
 
 
 export default App;
+
+

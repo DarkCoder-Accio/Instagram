@@ -60,22 +60,22 @@ const Signup = () => {
 
 
     return(
-        <div>
+        <div className="signup-container">
             <h1>Signup</h1>
             <form onSubmit={handleSubmit}>
-                 <input type="text"  placeholder="Enter your name" name = "name"
+                 <input type="text" className="input-field" placeholder="Enter your name" name = "name"
                     value={user.name} onChange={handleInput}
                  />
-                 <input type="text"  placeholder="Enter your email" name = "email"
+                 <input type="text" className="input-field" placeholder="Enter your email" name = "email"
                     value={user.email} onChange={handleInput} 
                  />
-                 <input type="password"  placeholder="Enter your password" name = "password"
+                 <input type="password" className="input-field" placeholder="Enter your password" name = "password"
                     value={user.password} onChange={handleInput}
                  />
-                 <input type="password"  placeholder="Enter your confirm password" name = "cpassword"
+                 <input type="password" className="input-field" placeholder="Enter your confirm password" name = "cpassword"
                     value={user.cpassword} onChange={handleInput}
                  />
-                 <button type="submit">Submit</button>
+                 <button className="signup-button" type="submit">Submit</button>
             </form>
         </div>
     )
